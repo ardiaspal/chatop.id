@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatop.id - Register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+</head>
+<body>
+	<div class="shadow-float"></div>
+	<div class="title-head">
+		<a href="#!">
+			<h1>Chatop.id</h1>
+		</a>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid" style="padding: 0 10%;">
+			<ul class="nav navbar-nav hight-show">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="produk.html">More Product</a></li>
+				<li><a href="artikel.html">Artikel</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+			</ul>
+			<ul class="nav navbar-nav small-show-v2">
+				<a href="#!">
+					<h1>Chatop.id</h1>
+				</a>
+			</ul>
+			<ul class="nav navbar-nav navbar-right hight-show">
+				<li><a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i> Login</a></li>
+				<li class="active"><a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right small-show">
+				<div style="font-size:30px;cursor:pointer;color: #070d59" onclick="openNav()">&#9776;</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="produk.html">More Product</a>
+		<a href="artikel.html">Artikel</a>
+		<a href="tentang.html">Tentang</a>
+		<div class="grup-reg-data">
+			<div class="col-xs-6 log-reg-data">
+				<a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i> Login</a>
+			</div>
+			<div class="col-xs-6 log-reg-data">
+				<a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="grup-header-nav">
+
+		<div class="login-form">
+			<form>
+				
+				<div class="panel-lite">
+					<div style="position: initial;" class="thumbur">
+						<div class="icon-regis">
+							<img src="images/regis.png" alt="">
+						</div>
+					</div>
+					<h4>Register</h4>
+					<div class="form-group-new">
+						<input class="form-control-new" required="required"/>
+						<label class="form-label-new">Username    </label>
+					</div>
+					<div class="form-group-new">
+						<input class="form-control-new" required="required"/>
+						<label class="form-label-new">Email    </label>
+					</div>
+					<div class="form-group-new">
+						<input class="form-control-new" required="required"/>
+						<label class="form-label-new">Alamat    </label>
+					</div>
+					<div class="form-group-new">
+						<input style="font-size: inherit !important;" type="file" class="form-control-new" required="required"/>
+						<label id="active-lable" class="form-label-new">Foto KTP    </label>
+					</div>
+					<div class="form-group-new">
+						<input class="form-control-new" required="required"/>
+						<label class="form-label-new">No Hp    </label>
+					</div>
+					<div class="form-group-new">
+						<input class="form-control-new" type="password" required="required"/>
+						<label class="form-label-new">Password</label>
+					</div>
+					<div class="form-group-new">
+						<input class="form-control-new" type="password" required="required"/>
+						<label class="form-label-new">Konfirm Password</label>
+					</div>
+					<a href="login.html">Login ?  </a>
+					<button class="floating-btn"><i class="icon-arrow"></i></button>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="grup-footer">
+			<div class="grup-footer-home">
+				<div class="grup-sosmed-home">
+					<h1>Jangan lupa kunjungi kami di <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a></h1>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="head-footer">
+						<h2>Layanna Pelanggan</h2>
+					</div>
+					<p><a href="#!">Bantuan</a></p>
+					<p><a href="#!">Syarat & Ketentuan</a></p>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="head-footer">
+						<h2>Contact Us</h2>
+					</div>
+					<p><b>Email : </b>chatop@gmail.com</p>
+					<p><b>No : </b>08328832723</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			Corpyright@2018 - we ❤ Eazy
+		</footer>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).bind('scroll', function() {
+				var navHeight = $( window ).height() - 70;
+				if ($(window).scrollTop() > navHeight) {
+					$('.navbar-default').addClass('fixed');
+					$('.navbar-default').css({
+						'box-shadow': '0px 3px 23px #e4e4e4'
+					});
+				}
+				else {
+					$('.navbar-default').removeClass('fixed');
+					$('.navbar-default').css({
+						'box-shadow': 'none'
+					});
+				}
+			});
+		});
+	</script>
+
+	<script>
+
+		$('.shadow-float').click(function () {
+			$('#mySidenav').css({
+				'width':'0'
+			});
+			$(this).css({
+				'display': 'none'
+			});
+		});
+
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			$('.shadow-float').css({
+				'display': 'inherit'
+			});
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			$('.shadow-float').css({
+				'display': 'none'
+			});
+		}
+	</script>
+</body>
+</html>
