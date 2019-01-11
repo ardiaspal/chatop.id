@@ -38,12 +38,14 @@
 				<li class="dropdown" style="padding: 0 !important;">
 					<a style=" display: inline-block; padding: 0 5px !important;" class="dropdown-toggle" data-toggle="dropdown" href="#"><img style="width: 49px;height: 49px;border: 2px solid #2c3e50;border-radius: 50%;overflow: hidden;" src="https://stickershop.line-scdn.net/stickershop/v1/product/3114197/LINEStorePC/main.png;compress=true" alt=""> Ardi</a>
 					<ul class="dropdown-menu" id="drop-style">
-						<li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a></li>
-						<li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a></li>
+						<li><a href="pinjemin.html"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a></li>
+						<li><a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a></li>
+						<li><a href="#!"><i class="fa fa-credit-card" aria-hidden="true"></i> Pembayaran</a></li>
+						<li><a href="#!"><i class="fa fa-history" aria-hidden="true"></i> History</a></li>
 						<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
 					</ul>
 				</li>
-				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a></li>
+				<li><a href="pesanan.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right small-show">
 				<div style="font-size:30px;cursor:pointer;color: #070d59" onclick="openNav()">&#9776;</div>
@@ -60,15 +62,23 @@
 					<a href="#!"><i class="fa fa-user-circle" aria-hidden="true"></i> Ardi</a>
 				</div>
 				<div class="col-xs-6 log-reg-data">
-					<a href="#"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a>
+					<a href="pinjemin.html"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a>
+				</div>
+			</div>
+			<div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="pesanan.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a>
+				</div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
 				</div>
 			</div>
 			<div class="grup-reg-prof">
 				<div class="col-xs-6 log-reg-data">
-					<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a>
+					<a href="#!"><i class="fa fa-credit-card" aria-hidden="true"></i> Pembayaran</a>
 				</div>
 				<div class="col-xs-6 log-reg-data">
-					<a href="#"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
+					<a href="#!"><i class="fa fa-history" aria-hidden="true"></i> History</a>
 				</div>
 			</div>
 		</div>
@@ -134,7 +144,7 @@
 
 				<div class="profile-data-barang">
 
-					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:5px;">
+					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:6px;">
 
 						<article class="card">
 							<header class="card__thumb">
@@ -163,7 +173,7 @@
 
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:5px;">
+					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:6px;">
 
 						<article class="card">
 							<header class="card__thumb">
@@ -192,7 +202,7 @@
 
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:5px;">
+					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:6px;">
 
 						<article class="card">
 							<header class="card__thumb">
@@ -221,7 +231,7 @@
 
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:5px;">
+					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:6px;">
 
 						<article class="card">
 							<header class="card__thumb">
@@ -250,7 +260,7 @@
 
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:5px;">
+					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:6px;">
 
 						<article class="card">
 							<header class="card__thumb">
@@ -279,7 +289,7 @@
 
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:5px;">
+					<div class="col-xs-12 col-sm-6 col-md-4" style="padding:6px;">
 
 						<article class="card">
 							<header class="card__thumb">
@@ -356,49 +366,49 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/lightbox.js"></script>
 	<script type="text/javascript">
-	$(document).ready(function(){
-		$(window).bind('scroll', function() {
-			var navHeight = $( window ).height() - 70;
-			if ($(window).scrollTop() > navHeight) {
-				$('.navbar-default').addClass('fixed');
-				$('.navbar-default').css({
-					'box-shadow': '0px 3px 23px #e4e4e4'
-				});
-			}
-			else {
-				$('.navbar-default').removeClass('fixed');
-				$('.navbar-default').css({
-					'box-shadow': 'none'
-				});
-			}
+		$(document).ready(function(){
+			$(window).bind('scroll', function() {
+				var navHeight = $( window ).height() - 70;
+				if ($(window).scrollTop() > navHeight) {
+					$('.navbar-default').addClass('fixed');
+					$('.navbar-default').css({
+						'box-shadow': '0px 3px 23px #e4e4e4'
+					});
+				}
+				else {
+					$('.navbar-default').removeClass('fixed');
+					$('.navbar-default').css({
+						'box-shadow': 'none'
+					});
+				}
+			});
 		});
-	});
 	</script>
 
 	<script>
 
-	$('.shadow-float').click(function () {
-		$('#mySidenav').css({
-			'width':'0'
+		$('.shadow-float').click(function () {
+			$('#mySidenav').css({
+				'width':'0'
+			});
+			$(this).css({
+				'display': 'none'
+			});
 		});
-		$(this).css({
-			'display': 'none'
-		});
-	});
 
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "250px";
-		$('.shadow-float').css({
-			'display': 'inherit'
-		});
-	}
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			$('.shadow-float').css({
+				'display': 'inherit'
+			});
+		}
 
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-		$('.shadow-float').css({
-			'display': 'none'
-		});
-	}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			$('.shadow-float').css({
+				'display': 'none'
+			});
+		}
 	</script>
 </body>
 </html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatop.id - Keranjang.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+</head>
+<body>
+	<div class="shadow-float"></div>
+	<div class="title-head">
+		<a href="#!">
+			<h1>Chatop.id</h1>
+		</a>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid" style="padding: 0 10%;">
+			<ul class="nav navbar-nav hight-show">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="produk.html">More Product</a></li>
+				<li><a href="artikel.html">Artikel</a></li>
+				<li><a href="tentang.html">Tentang</a></li>
+			</ul>
+			<ul class="nav navbar-nav small-show-v2">
+				<a href="#!">
+					<h1>Chatop.id</h1>
+				</a>
+			</ul>
+			<ul class="nav navbar-nav navbar-right hight-show dropdown-new">
+				<li class="dropdown" style="padding: 0 !important;">
+					<a style=" display: inline-block; padding: 0 5px !important;" class="dropdown-toggle" data-toggle="dropdown" href="#"><img style="width: 49px;height: 49px;border: 2px solid #2c3e50;border-radius: 50%;overflow: hidden;" src="https://stickershop.line-scdn.net/stickershop/v1/product/3114197/LINEStorePC/main.png;compress=true" alt=""> Ardi</a>
+					<ul class="dropdown-menu" id="drop-style">
+						<li><a href="pinjemin.html"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a></li>
+						<li><a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a></li>
+						<li><a href="Pembayaran.html"><i class="fa fa-credit-card" aria-hidden="true"></i> Pembayaran</a></li>
+						<li><a href="#!"><i class="fa fa-history" aria-hidden="true"></i> History</a></li>
+						<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+					</ul>
+				</li>
+				<li><a href="pesanan.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right small-show">
+				<div style="font-size:30px;cursor:pointer;color: #070d59" onclick="openNav()">&#9776;</div>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="image-profil-side">
+			<img src="https://stickershop.line-scdn.net/stickershop/v1/product/3114197/LINEStorePC/main.png;compress=true" alt="">
+			<div class="">
+				<div class="col-xs-6 log-reg-data">
+					<a href="#!"><i class="fa fa-user-circle" aria-hidden="true"></i> Ardi</a>
+				</div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="pinjemin.html"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a>
+				</div>
+			</div>
+			<div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="pesanan.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a>
+				</div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
+				</div>
+			</div>
+			<div class="grup-reg-prof">
+				<div class="col-xs-6 log-reg-data">
+					<a href="Pembayaran.html"><i class="fa fa-credit-card" aria-hidden="true"></i> Pembayaran</a>
+				</div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="#!"><i class="fa fa-history" aria-hidden="true"></i> History</a>
+				</div>
+			</div>
+		</div>
+		<a href="index.html">Home</a>
+		<a href="produk.html">More Product</a>
+		<a href="artikel.html">Artikel</a>
+		<a href="tentang.html">Tentang</a>
+		<div class="grup-reg-data">
+			<div class="col-xs-6 log-reg-data">
+				<a href="#!">@Chatop.id</a>
+			</div>
+			<div class="col-xs-6 log-reg-data">
+				<a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="grup-content">
+
+		<div class="grup-head-cart">
+			<h1>Chatop Cart</h1>
+
+			<div class="grup-data-list-pembelian">
+
+				<div class="grup-list-data-all">
+					<div class="col-xs-3 col-sm-2" id="solve-padding-data">
+						<div class="image-list-cart">
+							<img src="http://www.hidevolution.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/_/1_6_12_1_1_2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-xs-7 col-sm-8"  id="solve-padding-data">
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<div class="grup-data-barang">
+								<p><a href="#!">Laptop ROG</a></p>
+								<p>By <a href="#!">Joko</a></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-3">
+							<p>Rp. 15.000/Jam</p>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-2">
+							<div class="grup-jumlah-pembelian">
+								<a href="#!"><i class="fa fa-plus" aria-hidden="true"></i></a> 2 <a href="#!"><i class="fa fa-minus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-3">
+							<p>Rp. 30.000</p>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2"  id="solve-padding-data">
+						<a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+				<div class="grup-list-data-all">
+					<div class="col-xs-3 col-sm-2" id="solve-padding-data">
+						<div class="image-list-cart">
+							<img src="http://www.hidevolution.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/_/1_6_12_1_1_2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-xs-7 col-sm-8"  id="solve-padding-data">
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<div class="grup-data-barang">
+								<p><a href="#!">Laptop ROG</a></p>
+								<p>By <a href="#!">Joko</a></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-3">
+							<p>Rp. 15.000/Jam</p>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-2">
+							<div class="grup-jumlah-pembelian">
+								<a href="#!"><i class="fa fa-plus" aria-hidden="true"></i></a> 2 <a href="#!"><i class="fa fa-minus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-3">
+							<p>Rp. 30.000</p>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2"  id="solve-padding-data">
+						<a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+				<div class="grup-list-data-all">
+					<div class="col-xs-3 col-sm-2" id="solve-padding-data">
+						<div class="image-list-cart">
+							<img src="http://www.hidevolution.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/_/1_6_12_1_1_2.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-xs-7 col-sm-8"  id="solve-padding-data">
+						<div class="col-xs-12 col-sm-4 col-md-4">
+							<div class="grup-data-barang">
+								<p><a href="#!">Laptop ROG</a></p>
+								<p>By <a href="#!">Joko</a></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-3">
+							<p>Rp. 15.000/Jam</p>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-2">
+							<div class="grup-jumlah-pembelian">
+								<a href="#!"><i class="fa fa-plus" aria-hidden="true"></i></a> 2 <a href="#!"><i class="fa fa-minus" aria-hidden="true"></i></a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2 col-md-3">
+							<p>Rp. 30.000</p>
+						</div>
+					</div>
+					<div class="col-xs-2 col-sm-2"  id="solve-padding-data">
+						<a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="grup-continue-shoping">
+				
+				<div class="col-xs-12 col-sm-6">
+					<a href="#!"><i class="fa fa-arrow-left" aria-hidden="true"></i>  kembali belanja</a>
+				</div>
+				<div class="col-xs-12 col-sm-6" style="text-align: right;">
+					<a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i> Hapus semua pinjaman</a>
+				</div>
+
+			</div>
+
+			<div class="pesan-or-all-data">
+				<div class="col-sm-12 col-md-4">
+					<div class="grup-harga-antar">
+						<h2>Estimasi Ongkos Kirim</h2>
+						<p>Menghitung estimasi harga dan pajak</p>
+						<div class="grup-estimasi-form">
+							<form action="">
+								<div class="form-group">
+									<label for="email">Profinsi</label>
+									<div class="grup-search-list">
+										<select class="selectpicker form-control" data-live-search="true">
+											<option style="display:none"></option>
+											<option data-tokens="jawa timur">jawa timur</option>
+											<option data-tokens="jawa barat">jawa barat</option>
+											<option data-tokens="jawa tengah">jawa tengah</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Kabupaten</label>
+									<div class="grup-search-list">
+										<select class="selectpicker form-control" data-live-search="true">
+											<option style="display:none"></option>
+											<option data-tokens="surabaya">surabaya</option>
+											<option data-tokens="jakarta">jakarta</option>
+											<option data-tokens="jogjakarta">jogjakarta</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Kecamatan</label>
+									<div class="grup-search-list">
+										<select class="selectpicker form-control" data-live-search="true">
+											<option style="display:none"></option>
+											<option data-tokens="asembagus">asembagus</option>
+											<option data-tokens="singapur">Singapur</option>
+											<option data-tokens="jepang">Jepang</option>
+										</select>
+									</div>
+								</div>
+								<button type="submit">Hitung</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="grup-harga-antar">
+						<h2>PESAN</h2>
+						<p>Tambahakan suatu pesan untuk pesanan mu</p>
+						<div class="grup-estimasi-form">
+							<textarea class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="grup-harga-antar">
+						<form action="">
+							<table style="width: 100%;">
+								<tr>
+									<td class="lable-list-pesanan">SUbtotal</td>
+									<td><input type="text" class="modif-style" value="Rp. 500.000"></td>
+								</tr>
+								<tr>
+									<td class="lable-list-pesanan">Shiping</td>
+									<td><input type="text" class="modif-style" value="Rp. 20.000" name=""></td>
+								</tr>
+								<tr>
+									<td class="lable-list-pesanan-total">Total</td>
+									<td><input type="text" class="modif-style-total" value="Rp. 520.000"></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size: 17px;padding-top: 18px;">
+										<input type="checkbox" class="checkbox-bayar"> Saya setuju dengan syarat dan ketentuan
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2"><button disabled class="button-checkout">Proses Ke CheckOut</button></td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="grup-footer">
+			<div class="grup-footer-home">
+				<div class="grup-sosmed-home">
+					<h1>Jangan lupa kunjungi kami di <a href="#!"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#!"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a></h1>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="head-footer">
+						<h2>Layanna Pelanggan</h2>
+					</div>
+					<p><a href="#!">Bantuan</a></p>
+					<p><a href="#!">Syarat & Ketentuan</a></p>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="head-footer">
+						<h2>Contact Us</h2>
+					</div>
+					<p><b>Email : </b>chatop@gmail.com</p>
+					<p><b>No : </b>08328832723</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			Corpyright@2018 - we ❤ Eazy
+		</footer>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).bind('scroll', function() {
+				var navHeight = $( window ).height() - 70;
+				if ($(window).scrollTop() > navHeight) {
+					$('.navbar-default').addClass('fixed');
+					$('.navbar-default').css({
+						'box-shadow': '0px 3px 23px #e4e4e4'
+					});
+				}
+				else {
+					$('.navbar-default').removeClass('fixed');
+					$('.navbar-default').css({
+						'box-shadow': 'none'
+					});
+				}
+			});
+		});
+	</script>
+
+	<script>
+
+		$('.shadow-float').click(function () {
+			$('#mySidenav').css({
+				'width':'0'
+			});
+			$(this).css({
+				'display': 'none'
+			});
+		});
+
+		$('.checkbox-bayar').click(function () {
+
+			if ($(this).is(':checked')) {
+				console.log('masuk 1');
+				$('.button-checkout').removeAttr('disabled'); 
+
+			} else {
+				console.log('masuk 2');
+				$('.button-checkout').attr('disabled', true); 
+			}
+		});
+
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			$('.shadow-float').css({
+				'display': 'inherit'
+			});
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			$('.shadow-float').css({
+				'display': 'none'
+			});
+		}
+	</script>
+</body>
+</html>

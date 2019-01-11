@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chatop.id - Ardi.</title>
+	<title>Chatop.id - History.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
 
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -40,10 +41,12 @@
 					<ul class="dropdown-menu" id="drop-style">
 						<li><a href="pinjemin.html"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a></li>
 						<li><a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a></li>
+						<li><a href="#!"><i class="fa fa-credit-card" aria-hidden="true"></i> Pembayaran</a></li>
+						<li><a href="history.html"><i class="fa fa-history" aria-hidden="true"></i> History</a></li>
 						<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
 					</ul>
 				</li>
-				<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a></li>
+				<li><a href="pesanan.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right small-show">
 				<div style="font-size:30px;cursor:pointer;color: #070d59" onclick="openNav()">&#9776;</div>
@@ -60,15 +63,23 @@
 					<a href="#!"><i class="fa fa-user-circle" aria-hidden="true"></i> Ardi</a>
 				</div>
 				<div class="col-xs-6 log-reg-data">
-					<a href="#"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a>
+					<a href="pinjemin.html"><i class="fa fa-laptop" aria-hidden="true"></i> Pinjemin</a>
+				</div>
+			</div>
+			<div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="pesanan.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a>
+				</div>
+				<div class="col-xs-6 log-reg-data">
+					<a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
 				</div>
 			</div>
 			<div class="grup-reg-prof">
 				<div class="col-xs-6 log-reg-data">
-					<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (0)</a>
+					<a href="#!"><i class="fa fa-credit-card" aria-hidden="true"></i> Pembayaran</a>
 				</div>
 				<div class="col-xs-6 log-reg-data">
-					<a href="setting.html"><i class="fa fa-wrench" aria-hidden="true"></i> Setting</a>
+					<a href="history.html"><i class="fa fa-history" aria-hidden="true"></i> History</a>
 				</div>
 			</div>
 		</div>
@@ -89,6 +100,9 @@
 
 	<div class="grup-content">
 
+		<div class="grub-history-data">
+			
+		</div>
 
 		<div class="grup-footer">
 			<div class="grup-footer-home">
@@ -120,6 +134,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$(window).bind('scroll', function() {
@@ -149,6 +164,18 @@
 		$(this).css({
 			'display': 'none'
 		});
+	});
+
+	$('.checkbox-bayar').click(function () {
+
+		if ($(this).is(':checked')) {
+			console.log('masuk 1');
+			$('.button-checkout').removeAttr('disabled'); 
+
+		} else {
+			console.log('masuk 2');
+			$('.button-checkout').attr('disabled', true); 
+		}
 	});
 
 	function openNav() {
